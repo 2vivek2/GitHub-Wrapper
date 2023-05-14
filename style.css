@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:ubuntu, sans-serif;
+    background: linear-gradient(to right ,#1b263b, #073b4c);
+    color: #f5f3f4;
+    transition: 0.2s all ease-in-out;
+}
+#userName{
+    padding: 8px;
+    border-radius: 12px;
+    margin-top: 15px;
+    border: 1px solid grey;
+    background-color: transparent;
+    color: wheat;
+}
+.main button {
+    padding: 8px ;
+    border-radius: 12px;
+    margin-left: 10px;
+    margin-top: 15px;
+    border: 1px solid grey;
+    background-color: #184655;
+    color: #f5f3f4;
+}
+button{
+    cursor: pointer;
+    border-radius: 12px;
+    border: 0.5px solid #2a9d8f;
+    background-color: #184655;
+    transition: 0.2s all ease-in-out;
+}
+button:hover{
+    transform: scale(1.05);
+}
+.fa-github{
+    font-size: 6rem;
+    color:#f5f3f4;
+}
+a{
+    text-decoration: none;
+    color:#f5f3f4;
+}
+li{
+    list-style: none;
+}
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 80px;
+    width: 100vw;
+}
+.main{
+    width: 50vw;
+    margin: 100px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;          
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    width: 50vw;
+    color: #f5f3f4;
+}
+#profileInfo{
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 25px;
+}
+#profileInfo a{
+    color: #f5f3f4;
+}
+.card-title{
+    color: #e9edc9;
+}
+.card-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-title{
+    font-size: larger;
+    font-weight: 600;
+}
+#reposInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    position:sticky;
+    top: 10;
+}
+#reposInfo .card{
+    margin-top: 10px;
+   
+}
+#reposInfo .card-body{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    border-radius: 12px;
+    z-index: 1;
+    line-height: 28px;
+    width: 20vw;
+    
+}
+#reposInfo button{
+    padding: 7px;
+}
+
+
+
+/* Media Queries for Mobile devices */
+
+@media screen and (max-width:414px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        gap: 20px;
+        width: 100vw;
+    }
+    .main{
+        width: 95vw;
+        position: initial;
+    }
+    .fa-github{
+        font-size: 4rem;
+    }
+    #reposInfo{
+        width: 100%;
+
+    }
+    #reposInfo .card-body{
+        width: 80vw;
+    }
+}
+
+@media (min-width:481px) and (max-width:767px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100vw;
+    }
+    .main{
+        width: 100vw;
+        position: initial;
+    }
+    .fa-github{
+        font-size: 5rem;
+    }
+    #reposInfo{
+        width: 100%;
+
+    }
+    #reposInfo .card-body{
+        width: 80vw;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+
+}
